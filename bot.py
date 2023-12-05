@@ -8,6 +8,7 @@ client.remove_command('help')
 # on_ready
 @client.event
 async def on_ready():
+    await client.change_presence(status=discord.Status.offline)
     print(f"{client.user} successfully start.")
 
 
